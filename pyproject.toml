@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aclanthology-translate"
+version = "0.1.0"
+description = "Translate abstracts on ACL anthology into Japanese"
+authors = ["Masahiro Suzuki <msuzuki9609@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "aclanthology_translate"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+openai = "^0.27.8"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+tenacity = "^8.2.2"
+tqdm = "^4.65.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
